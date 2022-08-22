@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 450;
+    line-height: 1.4;
+    margin: 0;
+    color: #fff;
+    background-image: linear-gradient( 90deg, rgba(0, 0, 0,0.9), rgba(0, 0, 0,0.1) ), url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    padding-bottom:50px ;
+}
+h1, p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+header{
+    position: relative;
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+    animation-name: up;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes up {
+    from{
+        top: -150px;
+    }
+    to{
+        top: 0px;
+    }
+}
+main{
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+form{
+    width: 80%;
+    margin-bottom: 50px;
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    /* background-color:linear-gradient(135deg,rgba(255,255,255,1),rgba(255,255,255,1)) ; */
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border-radius: 0.25rem;
+    animation-name: left;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+    /* padding: 2.5rem 0.625rem; */
+    
+}
+@keyframes left {
+    from{
+        left: -110%;
+    }
+    to{
+        left: 0%;
+    }
+}
+label{
+    display: block;
+    margin: 1rem 0;
+}
+fieldset{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+input,textarea,select{
+    width: 100%;
+    height: 1.5rem;
+    border: 1px solid #ced4da;
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.25rem;
+    padding: 0.20rem 0;
+    background-color:inherit;
+}
+option{
+    color: rgb(0, 0, 0);
+    font-size: 1.125rem;
+    font-weight: 450;
+}
+.inline {
+    width: unset;
+    vertical-align: middle;
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    min-height: 2em;
+    font-size: 1.1rem;
+    background-color:inherit;
+    border-color: white;
+    min-width: 300px;
+    color:#fff;
+}
+input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color:black;
+}
+select{
+    min-height:2.0rem;
+}
+textarea{
+    height: 100px;
+}
